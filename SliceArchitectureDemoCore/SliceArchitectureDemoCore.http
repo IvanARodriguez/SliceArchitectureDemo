@@ -1,0 +1,6 @@
+@SliceArchitectureDemoCore_HostAddress = http://localhost:5099
+
+GET {{SliceArchitectureDemoCore_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
