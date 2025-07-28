@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SliceArchitectureDemoCore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d7ff6193f9fafbb1ad7a4b1ec7cf150e31f7732a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0ce831569aa64c43c837a431b8e7e46f6dd76626")]
 [assembly: System.Reflection.AssemblyProductAttribute("SliceArchitectureDemoCore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SliceArchitectureDemoCore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
