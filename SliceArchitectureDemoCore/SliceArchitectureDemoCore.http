@@ -1,6 +1,15 @@
 @SliceArchitectureDemoCore_HostAddress = http://localhost:5099
 
-GET {{SliceArchitectureDemoCore_HostAddress}}/weatherforecast/
+GET {{SliceArchitectureDemoCore_HostAddress}}/test
 Accept: application/json
 
 ###
+POST {{SliceArchitectureDemoCore_HostAddress}}/product/create
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Mousepad X2025",
+  "price": 10.99,
+  "categoryId": 1
+}
