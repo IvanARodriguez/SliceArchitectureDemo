@@ -11,7 +11,7 @@ public class UpdateProductHandler(AppDBContext context) : IRequestHandler<Update
   {
     var product = request.Product.Adapt<Domain.Product>();
     context.Products.Update(product);
-    await context.SaveChangesAsync();
+    await context.SaveChangesAsync(cancellationToken);
     return new ServiceResponse(true, "Product updated");
   }
 }
