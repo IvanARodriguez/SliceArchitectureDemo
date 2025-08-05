@@ -1,0 +1,46 @@
+## Build artifacts
+bin/
+obj/
+
+## User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.vs/
+.vscode/
+
+## .NET Core related
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## ASP.NET Core
+wwwroot/lib/
+node_modules/
+
+## Entity Framework Core
+# Migrations snapshot files and temp files
+*.db-shm
+*.db-wal
+
+## SQLite database file
+*.db
+*.sqlite
+
+## Logs and crash reports
+*.log
+
+## Secrets and settings
+appsettings.Development.json
+secrets.json
+
+## JetBrains Rider
+.idea/
+
+## macOS / Linux
+.DS_Store
+*.swp
+
+## Windows thumbnail cache
+Thumbs.db
