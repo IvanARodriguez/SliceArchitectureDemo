@@ -1,5 +1,6 @@
 using MediatR;
 using SliceArchitectureDemoCore.Features.Product.CreateProduct;
+using SliceArchitectureDemoCore.Features.Product.UpdateProduct;
 
 namespace SliceArchitectureDemoCore.Features.Product;
 
@@ -11,6 +12,11 @@ public static class ProductEndpoints
     productGroup.MapPost("/create", async (CreateProductRequest product, ISender sender) =>
     {
       var response = await sender.Send(new CreateProductCommand(product));
+      return response.Success ? Results.Ok(response) : Results.BadRequest(response);
+    });
+    productGroup.MapPut("/update", async (UpdateProductRequest product, ISender sender) =>
+    {
+      var response = await sender.Send(new UpdateProductCommand(product));
       return response.Success ? Results.Ok(response) : Results.BadRequest(response);
     });
     return productGroup;
