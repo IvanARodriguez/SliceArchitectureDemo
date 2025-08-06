@@ -1,7 +1,7 @@
 using Mapster;
-using MediatR;
 using SliceArchitectureDemoCore.Infrastructure;
 using SliceArchitectureDemoCore.Shared;
+using SliceArchitectureDemoCore.Shared.Mediator;
 
 namespace SliceArchitectureDemoCore.Features.Product.CreateProduct;
 

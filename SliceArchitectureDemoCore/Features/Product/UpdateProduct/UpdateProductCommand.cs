@@ -1,5 +1,5 @@
-using MediatR;
 using SliceArchitectureDemoCore.Shared;
+using SliceArchitectureDemoCore.Shared.Mediator;
 
 namespace SliceArchitectureDemoCore.Features.Product.UpdateProduct;
 

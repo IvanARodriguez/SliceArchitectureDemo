@@ -1,15 +1,50 @@
 @SliceArchitectureDemoCore_HostAddress = http://localhost:5099
 
+# PRODUCTS ////////////////////////////////////////////
 GET {{SliceArchitectureDemoCore_HostAddress}}/test
 Accept: application/json
 
 ###
-POST {{SliceArchitectureDemoCore_HostAddress}}/product/create
+POST {{SliceArchitectureDemoCore_HostAddress}}/product
 Accept: application/json
 Content-Type: application/json
 
 {
   "name": "Mousepad X2025",
+  "description": "fast desktop Bluetooth mousepad",
   "price": 10.99,
   "categoryId": 1
+}
+
+###
+PUT {{SliceArchitectureDemoCore_HostAddress}}/product
+Accept: application/json
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Mousepad x2026",
+  "description": "just growing this shit",
+  "price": 0.00,
+  "categoryId": 1
+}
+
+###
+DELETE {{SliceArchitectureDemoCore_HostAddress}}/product/1
+Accept: application/json
+
+
+###
+GET {{SliceArchitectureDemoCore_HostAddress}}/product/1
+Accept: application/json
+
+
+# Category //////////////////////////////////////////////
+###
+POST {{SliceArchitectureDemoCore_HostAddress}}/category
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Computers"
 }
